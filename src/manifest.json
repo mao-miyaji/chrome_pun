@@ -1,0 +1,19 @@
+{
+    "name": "Pick Up News",
+    "manifest_version": 2,
+    "short_name": "PUN",
+    "author": "mao-miyaji",
+    "version": "1.0.0",
+    "description": "指定条件に合ったニュースをNEWSAPIから自動取得してリスト化。ChromeのLocalStorageを使用します。",
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "browser_action": {
+        "default_popup": "index.html#/list"
+    },
+    "background": {
+        "page": "index.html#/event",
+        "persistent": true
+    },
+    "permissions": [
+        "tabs"
+    ]
+}
